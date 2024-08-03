@@ -2,7 +2,9 @@ import "./classes.scss";
 
 function Classes() {
 	return (
-		<section className='classes'>
+		<section
+			id='classes-section'
+			className='classes'>
 			<h1 className='classes__header heading--1'>Racing Classes</h1>
 			<div className='classes__card-container'>
 				<div className='classes__card'>

@@ -2,8 +2,10 @@ import "./info.scss";
 
 function Info() {
 	return (
-		<section className='info'>
-			<h1 className='heading--1'>Info</h1>
+		<section
+			id='info-section'
+			className='info'>
+			<h1 className='infor__header heading--1'>Info</h1>
 			<div className='info__container'>
 				<img
 					src='/TCR-PRE-SEASON.png'

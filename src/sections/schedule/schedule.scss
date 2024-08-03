@@ -5,8 +5,14 @@
 	display: grid;
 	justify-items: center;
 	align-items: center;
+	row-gap: 6rem;
 
-	grid-template-rows: 10rem 100rem;
+	grid-template-rows: 10rem min-content;
+
+	@media only screen and (max-width: 100em) {
+		display: flex;
+		flex-direction: column;
+	}
 
 	&__header {
 		grid-row: 1;
@@ -14,14 +20,9 @@
 
 	img {
 		grid-row: 2;
-		width: 90%;
+		width: clamp(50%, 80em, 95%);
 		height: 100%;
 		border-radius: 2rem;
 		box-shadow: var(--shadow);
-
-		@media only screen and (max-width: 80em) {
-			width: 90%;
-			height: 30%;
-		}
 	}
 }

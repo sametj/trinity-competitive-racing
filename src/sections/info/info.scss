@@ -3,12 +3,12 @@
 	grid-column: 1 / span 3;
 
 	display: grid;
-	grid-template-rows: 10rem 1fr;
+	grid-template-rows: 10rem min-content;
 	gap: 2rem;
 	justify-items: center;
 	align-items: center;
 
-	&h1 {
+	&__header {
 		grid-row: 1;
 	}
 	&__container {

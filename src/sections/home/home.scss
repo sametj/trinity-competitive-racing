@@ -5,7 +5,7 @@
 	&__content {
 		height: 100%;
 		display: grid;
-		grid-template-rows: 10rem 30rem 20rem 10rem 80rem;
+		grid-template-rows: 10rem 30rem 20rem 10rem;
 		grid-template-columns: repeat(2, 1fr);
 		justify-items: center;
 	}
@@ -13,6 +13,7 @@
 	&__heading {
 		grid-column: 1 / span 3;
 		align-self: center;
+		text-align: center;
 	}
 
 	&__sub-heading {
@@ -56,6 +57,10 @@
 	justify-items: center;
 	align-items: center;
 	grid-template-rows: 10rem 1fr;
+
+	@media only screen and (max-width: 100em) {
+		grid-template-rows: 10rem min-content;
+	}
 
 	&__heading {
 		grid-row: 1;

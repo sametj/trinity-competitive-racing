@@ -2,7 +2,9 @@ import "./about.scss";
 
 function About() {
 	return (
-		<section className='about'>
+		<section
+			id='about-section'
+			className='about'>
 			<p className='about__text'>
 				Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
 				consectetur, corporis, fuga omnis culpa itaque est voluptas assumenda

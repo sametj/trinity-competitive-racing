@@ -12,21 +12,23 @@
 
 	&__logo {
 		grid-column: 1;
-		width: 20rem;
+		width: clamp(5rem, 15em, 20rem);
 		padding: 2rem;
 	}
 
 	&__icons {
 		grid-column: 2;
-		justify-self: end;
 		display: flex;
-		gap: 4rem;
-		padding: 0 4rem;
+		justify-content: end;
+		flex-shrink: 0;
+		gap: 1rem;
+		padding-right: 2rem;
+		width: 100%;
 
 		.icon {
 			fill: var(--color-white);
-			width: 4.5rem;
-			height: 4.5rem;
+			width: clamp(5rem, 6rem, 8rem);
+			height: clamp(5rem, 6rem, 8rem);
 		}
 	}
 }
@@ -48,6 +50,77 @@
 
 		@media only screen and (max-width: 100em) {
 			font-size: 3rem !important;
+		}
+	}
+}
+
+.nav-bar {
+	position: fixed;
+	bottom: 2rem;
+	left: 0;
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: 100px;
+	z-index: 10;
+
+	@media only screen and (max-width: 100em) {
+		height: 10%;
+	}
+
+	&__container {
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10rem;
+		width: 80%;
+		padding: 2rem;
+		background-color: var(--color-secondary);
+	}
+
+	&__items {
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+
+		overflow: hidden;
+
+		border-top-left-radius: 10rem;
+		border-bottom-left-radius: 10rem;
+		border-top-right-radius: 10rem;
+		border-bottom-right-radius: 10rem;
+		box-shadow: var(--shadow);
+	}
+
+	&__link {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		text-align: center;
+		font-family: Formula1Bold;
+		font-size: 2rem;
+		background-color: var(--color-primary);
+		color: var(--color-white);
+		transition: all 0.2s;
+		transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1), ease,
+			cubic-bezier(0.165, 0.84, 0.44, 1), cubic-bezier(0.165, 0.84, 0.44, 1);
+
+		@media only screen and (max-width: 100em) {
+			font-size: 1.2rem;
+		}
+
+		&:hover {
+			width: calc(100% + 6rem);
+			filter: brightness(0.8);
+		}
+
+		&:not(:last-child) {
+			margin-right: 2px;
 		}
 	}
 }

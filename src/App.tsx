@@ -6,13 +6,16 @@ import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import Info from "./sections/info/Info";
 import { ReactLenis } from "lenis/react";
-import animate from "@/utils/ScrollAnimation.js";
+import { animate, scrollToSection } from "@/utils/ScrollAnimation.js";
 import { useEffect } from "react";
+import Navbar from "./layout/Navbar";
 
 function App() {
 	const scroll = animate;
+	const scrollTo = scrollToSection;
 	useEffect(() => {
 		scroll();
+		scrollTo();
 	}, []);
 
 	return (
@@ -21,6 +24,7 @@ function App() {
 				autoRaf
 				root>
 				<Header />
+				<Navbar />
 				<Home />
 				<About />
 				<Classes />

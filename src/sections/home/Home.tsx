@@ -16,7 +16,9 @@ function Home() {
 					/>
 				</video>
 			</div>
-			<section className='home'>
+			<section
+				id='home-section'
+				className='home'>
 				<div className='home__content'>
 					<h1 className='home__heading heading--1'>
 						Trinity Competitive Racing
