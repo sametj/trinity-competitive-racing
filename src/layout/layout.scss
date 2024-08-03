@@ -1,0 +1,53 @@
+.header {
+	grid-column: 1 / span 3;
+	z-index: 10;
+	position: fixed;
+	width: 100%;
+
+	display: grid;
+	grid-template-columns: 20rem 1fr;
+	align-items: center;
+
+	background-color: black;
+
+	&__logo {
+		grid-column: 1;
+		width: 20rem;
+		padding: 2rem;
+	}
+
+	&__icons {
+		grid-column: 2;
+		justify-self: end;
+		display: flex;
+		gap: 4rem;
+		padding: 0 4rem;
+
+		.icon {
+			fill: var(--color-white);
+			width: 4.5rem;
+			height: 4.5rem;
+		}
+	}
+}
+
+.footer {
+	grid-row: 7;
+	grid-column: 1 / span 3;
+
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
+
+	filter: opacity(0.4);
+
+	&__title {
+		text-align: center;
+		grid-column: 1 / span 3;
+		font-size: 10rem !important;
+
+		@media only screen and (max-width: 100em) {
+			font-size: 3rem !important;
+		}
+	}
+}
