@@ -12,7 +12,7 @@ function About() {
 				voluptas quidem sint. Maxime laborum beatae laudantium quod non eos
 				deserunt obcaecati, consequatur ex praesentium reiciendis quia tempora
 				maiores ut quae sint aliquid! Perferendis, quas suscipit dolorum eum
-				perspiciatis nisi est optio dolorem. Eligendi consequatur voluptatibus
+				perspiciatis nisi est optio dolorem. Eligendo consequatur voluptatibus
 				natus aspernatur quaerat dolore dicta eveniet perspiciatis, laudantium
 				architecto aut ratione vel aliquam eius, inventore, nemo fugiat iste hic
 				quas aperiam iure cum perferendis? Fuga, minus modi!
