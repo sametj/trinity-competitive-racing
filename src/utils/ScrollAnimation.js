@@ -52,3 +52,20 @@ export function scrollToSection() {
 		});
 	});
 }
+
+export function hideNav() {
+	const aboutSection = document.querySelector('.about')
+	const navBar = document.querySelector('.nav-bar')
+	const info = document.querySelector('.info')
+	gsap.to ( navBar, {
+		scrollTrigger: {
+			trigger: aboutSection,
+			start: "top 0%",
+			// endTrigger: info,
+			end: "top 20%",
+			scrub: true,
+			markers: true,
+		},
+		display: 'flex'
+	})
+}

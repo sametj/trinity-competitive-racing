@@ -6,16 +6,18 @@ import Header from "./layout/Header";
 import Footer from "./layout/Footer";
 import Info from "./sections/info/Info";
 import { ReactLenis } from "lenis/react";
-import { animate, scrollToSection } from "@/utils/ScrollAnimation.js";
+import { animate, scrollToSection, hideNav} from "@/utils/ScrollAnimation.js";
 import { useEffect } from "react";
 import Navbar from "./layout/Navbar";
 
 function App() {
 	const scroll = animate;
 	const scrollTo = scrollToSection;
+	const hideNavButton = hideNav;
 	useEffect(() => {
 		scroll();
 		scrollTo();
+		hideNavButton();
 	}, []);
 
 	return (
