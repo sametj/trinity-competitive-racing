@@ -36,12 +36,12 @@ function Home() {
 						<h1 className='video__header heading--1'>
 							Check us out on youtube
 						</h1>
-						<iframe
+						{/* <iframe
 							className='vid'
 							src='https://www.youtube-nocookie.com/embed/3SQlfiQZYdw?si=i_wiiPy_zv7Pm3U0'
 							title='YouTube video player'
 							frameBorder='0'
-						/>
+						/> */}
 					</div>
 				</div>
 			</section>
