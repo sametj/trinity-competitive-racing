@@ -18,7 +18,7 @@ export function animate() {
 				scrub: true,
 				markers: false,
 			},
-			opacity: 0.2,
+			opacity: 0.1,
 			stagger: 0.1,
 		});
 	});
@@ -59,9 +59,9 @@ export function scrollToSection() {
 }
 
 export function hideNav() {
-	const aboutSection = document.querySelector(".about");
-	const navBar = document.querySelector(".nav-bar");
-	const info = document.querySelector(".info");
+	const aboutSection = document.querySelector(".about")!;
+	const navBar = document.querySelector(".nav-bar")!;
+	const info = document.querySelector(".info")!;
 
 	gsap.fromTo(
 		navBar,
@@ -73,7 +73,7 @@ export function hideNav() {
 				start: "top top",
 				end: "top center",
 				scrub: true,
-				markers: true,
+				markers: false,
 			},
 		}
 	);
@@ -89,7 +89,7 @@ export function hideNav() {
 				endTrigger: info,
 				end: "top center",
 				scrub: true,
-				markers: true,
+				markers: false,
 			},
 		}
 	);

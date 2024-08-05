@@ -6,16 +6,13 @@ function About() {
 			id='about-section'
 			className='about'>
 			<p className='about__text'>
-				Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
-				consectetur, corporis, fuga omnis culpa itaque est voluptas assumenda
-				quasi architecto debitis eos vel ratione? Voluptates placeat consequatur
-				voluptas quidem sint. Maxime laborum beatae laudantium quod non eos
-				deserunt obcaecati, consequatur ex praesentium reiciendis quia tempora
-				maiores ut quae sint aliquid! Perferendis, quas suscipit dolorum eum
-				perspiciatis nisi est optio dolorem. Eligendo consequatur voluptatibus
-				natus aspernatur quaerat dolore dicta eveniet perspiciatis, laudantium
-				architecto aut ratione vel aliquam eius, inventore, nemo fugiat iste hic
-				quas aperiam iure cum perferendis? Fuga, minus modi!
+				TCR, Trinity Competitive Racing is a Formula One racing league with
+				cross platform enabled. We pride ourselves on being a top class North
+				American league, with some of the best talent. Including two series:
+				Challenger and Elite, each with different skill levels and assist
+				restrictions, enabling a wide variety of drivers to find their best
+				competition. New to season 17, we will see the expansion of Super
+				Formula iRacing Series.
 			</p>
 		</section>
 	);
