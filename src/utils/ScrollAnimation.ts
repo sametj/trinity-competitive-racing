@@ -8,7 +8,7 @@ export function animate() {
 	const splitType = document.querySelectorAll(".about__text");
 	const title = document.querySelector(".home__heading");
 	const header = document.querySelector(".header");
-	splitType.forEach((char, i) => {
+	splitType.forEach((char) => {
 		const text = new SplitType(char as HTMLElement, { types: "chars" });
 		gsap.from(text.chars, {
 			scrollTrigger: {
