@@ -18,11 +18,20 @@
 		grid-row: 1;
 	}
 
-	img {
-		grid-row: 2;
-		width: clamp(50%, 80em, 95%);
-		height: 100%;
-		border-radius: 2rem;
-		box-shadow: var(--shadow);
+	&__container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		gap: 6rem;
+		padding: 2rem;
+
+		img {
+			grid-row: 2;
+			width: 100%;
+			height: 100%;
+			border-radius: 2rem;
+			box-shadow: var(--shadow);
+		}
 	}
 }
