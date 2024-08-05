@@ -43,10 +43,9 @@ export function animate() {
 }
 
 export function scrollToSection() {
-	const navlinks = document.querySelectorAll(".nav-bar__link");
+	const navlinks = document.querySelectorAll("a");
 	navlinks.forEach((nav) => {
 		let link = nav.getAttribute("id");
-		console.log(link);
 		nav.addEventListener("click", () => {
 			gsap.to(window, {
 				duration: 2,

@@ -22,7 +22,9 @@
 
 %btn {
 	border: none;
-	display: inline-block;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 	font-size: 2rem;
 	font-family: var(--font-family-regular);
 	font-weight: bolder;
@@ -33,6 +35,11 @@
 	border: 2px solid var(--text-color-primary);
 	box-shadow: var(--shadow);
 	transition: all cubic-bezier(0.55, 0.055, 0.675, 0.19) infinite;
+	&:link,
+	&:visited {
+		text-decoration: none;
+		color: var(--text-color-primary);
+	}
 	&:hover {
 		animation: pulsate 1s infinite;
 	}
