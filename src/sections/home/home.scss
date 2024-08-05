@@ -1,76 +1,76 @@
 .home {
-	grid-column: 1 / span 3;
-	grid-row: 2;
+  grid-column: 1 / span 3;
+  grid-row: 2;
 
-	&__content {
-		height: 100%;
-		display: grid;
-		grid-template-rows: 10rem 30rem 20rem 10rem;
-		grid-template-columns: repeat(2, 1fr);
-		justify-items: center;
-	}
+  &__content {
+    height: 100%;
+    display: grid;
+    grid-template-rows: 10rem 30rem 20rem 10rem;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
 
-	&__heading {
-		grid-column: 1 / span 3;
-		align-self: center;
-		text-align: center;
-	}
+  &__heading {
+    grid-column: 1 / span 3;
+    align-self: center;
+    text-align: center;
+  }
 
-	&__sub-heading {
-		grid-column: 1 / span 2;
-		align-self: center;
-	}
+  &__sub-heading {
+    grid-column: 1 / span 2;
+    align-self: center;
+  }
 
-	&__motto {
-		text-align: center;
-		font-family: "Formula1Bold", sans-serif;
-		font-style: italic;
-		font-size: 4rem;
-		grid-column: 1 / span 2;
-		color: var(--color-secondary);
-		text-shadow: var(--shadow);
-	}
+  &__motto {
+    text-align: center;
+    font-family: "Formula1Bold", sans-serif;
+    font-style: italic;
+    font-size: 4rem;
+    grid-column: 1 / span 2;
+    color: var(--color-secondary);
+    text-shadow: var(--shadow);
+  }
 
-	&__btn-container {
-		grid-column: 1 / span 2;
-		align-self: start;
-		display: flex;
-		gap: 2rem;
-	}
+  &__btn-container {
+    grid-column: 1 / span 2;
+    align-self: start;
+    display: flex;
+    gap: 2rem;
+  }
 }
 
 .bg-video {
-	grid-row: 1 / span 2;
-	grid-column: 1 / span 3;
+  grid-row: 1 / span 2;
+  grid-column: 1 / span 3;
 
-	&__content {
-		width: 100%;
-		object-fit: cover;
-		opacity: 0.05;
-	}
+  &__content {
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.05;
+  }
 }
 .video {
-	grid-row: 5;
-	grid-column: 1 / span 3;
-	height: fit-content;
+  grid-row: 5;
+  grid-column: 1 / span 3;
+  height: fit-content;
 
-	display: grid;
-	justify-items: center;
-	align-items: center;
-	grid-template-rows: 10rem 1fr;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-rows: 10rem 1fr;
 
-	@media only screen and (max-width: 100em) {
-		grid-template-rows: 10rem min-content;
-	}
+  @media only screen and (max-width: 100em) {
+    grid-template-rows: 10rem min-content;
+  }
 
-	&__heading {
-		grid-row: 1;
-	}
+  &__heading {
+    grid-row: 1;
+  }
 
-	.vid {
-		width: clamp(40vw, 140em, 90vw);
-		height: clamp(20vw, 70em, 45vw);
-		border-radius: 4rem;
-		box-shadow: var(--box-shadow);
-	}
+  .vid {
+    width: clamp(40vw, 140em, 90vw);
+    height: clamp(20vw, 70em, 45vw);
+    border-radius: 4rem;
+    box-shadow: var(--box-shadow);
+  }
 }
