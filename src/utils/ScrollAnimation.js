@@ -23,18 +23,23 @@ export function animate() {
 		});
 	});
 
-	gsap.to(header, {
-		scrollTrigger: {
-			trigger: title,
-			start: "top 0%",
-			end: "top 50%",
-			scrub: true,
-			markers: false,
-		},
-		duration: 0.5,
-		ease: "power2.out",
-		backgroundColor: "transparent",
-	});
+	gsap.fromTo(
+		header,
+		{ backgroundColor: "rgba(0, 0, 0, 0.5)" },
+
+		{
+			scrollTrigger: {
+				trigger: title,
+				start: "top 0%",
+				end: "top 50%",
+				scrub: true,
+				markers: false,
+			},
+			duration: 0.5,
+			ease: "power2.out",
+			backgroundColor: "transparent",
+		}
+	);
 }
 
 export function scrollToSection() {
@@ -54,18 +59,38 @@ export function scrollToSection() {
 }
 
 export function hideNav() {
-	const aboutSection = document.querySelector('.about')
-	const navBar = document.querySelector('.nav-bar')
-	const info = document.querySelector('.info')
-	gsap.to ( navBar, {
-		scrollTrigger: {
-			trigger: aboutSection,
-			start: "top 0%",
-			// endTrigger: info,
-			end: "top 20%",
-			scrub: true,
-			markers: true,
-		},
-		display: 'flex'
-	})
+	const aboutSection = document.querySelector(".about");
+	const navBar = document.querySelector(".nav-bar");
+	const info = document.querySelector(".info");
+
+	gsap.fromTo(
+		navBar,
+		{ display: "none" },
+		{
+			display: "flex",
+			scrollTrigger: {
+				trigger: aboutSection,
+				start: "top top",
+				end: "top center",
+				scrub: true,
+				markers: true,
+			},
+		}
+	);
+
+	gsap.fromTo(
+		navBar,
+		{ display: "flex" },
+		{
+			display: "none",
+			scrollTrigger: {
+				trigger: info,
+				start: "top top",
+				endTrigger: info,
+				end: "top center",
+				scrub: true,
+				markers: true,
+			},
+		}
+	);
 }
