@@ -5,7 +5,7 @@
   &__content {
     height: fit-content;
     display: grid;
-    grid-template-rows: 10rem 30rem 20rem;
+    grid-template-rows: 10rem 25rem 15rem;
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
   }
@@ -33,6 +33,7 @@
 
   &__btn-container {
     grid-column: 1 / span 2;
+    grid-row: 5;
     align-items: center;
     display: flex;
     justify-content: center;
