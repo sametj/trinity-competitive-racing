@@ -38,6 +38,11 @@
     justify-content: center;
     height: min-content;
     gap: 1rem;
+
+    @media only screen and (max-width: 50em) {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }
 
