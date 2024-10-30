@@ -1,5 +1,5 @@
 import { gsap } from "gsap";
-import { ScrollTrigger, ScrollToPlugin } from "gsap/all";
+import { ScrollToPlugin, ScrollTrigger } from "gsap/all";
 import SplitType from "split-type";
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
@@ -9,8 +9,8 @@ export function animate() {
 	const title = document.querySelector(".home__heading");
 	const header = document.querySelector(".header");
 	splitType.forEach((char) => {
-		const text = new SplitType(char as HTMLElement, { types: "chars" });
-		gsap.from(text.chars, {
+		const text = new SplitType(char as HTMLElement, { types: "words" });
+		gsap.from(text.words, {
 			scrollTrigger: {
 				trigger: char,
 				start: "top 80%",
@@ -45,7 +45,7 @@ export function animate() {
 export function scrollToSection() {
 	const navlinks = document.querySelectorAll("a");
 	navlinks.forEach((nav) => {
-		let link = nav.getAttribute("id");
+		const link = nav.getAttribute("id");
 		nav.addEventListener("click", () => {
 			gsap.to(window, {
 				duration: 2,

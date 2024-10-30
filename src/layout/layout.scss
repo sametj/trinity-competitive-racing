@@ -1,124 +1,124 @@
 .header {
-  grid-column: 1 / span 3;
-  z-index: 10;
-  position: fixed;
-  width: 100%;
+	grid-column: 1 / span 3;
+	z-index: 10;
+	position: fixed;
+	width: 100%;
 
-  display: grid;
-  grid-template-columns: 20rem 1fr;
-  align-items: center;
+	display: grid;
+	grid-template-columns: 20rem 1fr;
+	align-items: center;
 
-  backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
 
-  &__logo {
-    grid-column: 1;
-    width: clamp(12rem, 10vw, 20rem);
-    padding: 2rem;
-  }
+	&__logo {
+		grid-column: 1;
+		width: clamp(12rem, 10vw, 20rem);
+		padding: 2rem;
+	}
 
-  &__icons {
-    grid-column: 2;
-    display: flex;
-    justify-content: end;
-    flex-shrink: 0;
-    gap: 1rem;
-    padding-right: 2rem;
-    width: 100%;
+	&__icons {
+		grid-column: 2;
+		display: flex;
+		justify-content: end;
+		flex-shrink: 0;
+		gap: 1rem;
+		padding-right: 2rem;
+		width: 100%;
 
-    .icon {
-      fill: var(--color-white);
-      width: clamp(5rem, 3.5vw, 7rem);
-      height: clamp(5rem, 3.5vw, 7rem);
-    }
-  }
+		.icon {
+			fill: var(--color-white);
+			width: clamp(5rem, 3.5vw, 7rem);
+			height: clamp(5rem, 3.5vw, 7rem);
+		}
+	}
 }
 
 .footer {
-  grid-row: 7;
-  grid-column: 1 / span 3;
+	grid-row: 7;
+	grid-column: 1 / span 3;
 
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  justify-items: center;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	justify-items: center;
 
-  filter: opacity(0.4);
+	filter: opacity(0.4);
 
-  &__title {
-    text-align: center;
-    grid-column: 1 / span 3;
-    font-size: 10rem !important;
+	&__title {
+		text-align: center;
+		grid-column: 1 / span 3;
+		font-size: 10rem !important;
 
-    @media only screen and (max-width: 100em) {
-      font-size: 3rem !important;
-    }
-  }
+		@media only screen and (max-width: 100em) {
+			font-size: 3rem !important;
+		}
+	}
 }
 
 .nav-bar {
-  position: fixed;
-  bottom: 2rem;
-  left: 0;
-  display: none;
-  justify-content: center;
-  width: 100%;
-  height: 100px;
-  z-index: 10;
+	position: fixed;
+	bottom: 2rem;
+	left: 0;
+	display: none;
+	justify-content: center;
+	width: 100%;
+	height: 100px;
+	z-index: 10;
 
-  @media only screen and (max-width: 100em) {
-    height: 10%;
-  }
+	@media only screen and (max-width: 100em) {
+		height: 10%;
+	}
 
-  &__container {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10rem;
-    width: 80%;
-    padding: 2rem;
-    background-color: var(--color-secondary);
-  }
+	&__container {
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		border-radius: 10rem;
+		width: 80%;
+		padding: 2rem;
+		background-color: var(--color-secondary);
+	}
 
-  &__items {
-    display: flex;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    user-select: none;
+	&__items {
+		display: flex;
+		height: 100%;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		user-select: none;
 
-    overflow: hidden;
+		overflow: hidden;
 
-    border-radius: 10rem;
-    box-shadow: var(--shadow);
-  }
+		border-radius: 10rem;
+		box-shadow: var(--shadow);
+	}
 
-  &__link {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
-    text-align: center;
-    font-family: Formula1Bold;
-    font-size: 2rem;
-    background-color: var(--color-primary);
-    color: var(--color-white);
-    transition: all 0.2s;
-    transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1), ease,
-      cubic-bezier(0.165, 0.84, 0.44, 1), cubic-bezier(0.165, 0.84, 0.44, 1);
+	&__link {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		text-align: center;
+		font-family: Formula1Bold;
+		font-size: 2rem;
+		background-color: var(--color-primary);
+		color: var(--color-white);
+		transition: all 0.2s;
+		transition-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1), ease,
+			cubic-bezier(0.165, 0.84, 0.44, 1), cubic-bezier(0.165, 0.84, 0.44, 1);
 
-    @media only screen and (max-width: 100em) {
-      font-size: 1.2rem;
-    }
+		@media only screen and (max-width: 100em) {
+			font-size: 1.2rem;
+		}
 
-    &:hover {
-      width: calc(100% + 6rem);
-      filter: brightness(0.8);
-    }
+		&:hover {
+			width: calc(100% + 6rem);
+			filter: brightness(0.8);
+		}
 
-    &:not(:last-child) {
-      margin-right: 2px;
-    }
-  }
+		&:not(:last-child) {
+			margin-right: 2px;
+		}
+	}
 }
