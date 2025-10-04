@@ -15,7 +15,7 @@ function Home() {
             Trinity Competitive Racing
           </h1>
           <h2 className="home__sub-heading heading--2">
-            Registration for season 18 is open!
+            Registration for season 20 is open!
           </h2>
           <span className="home__motto">Unlock your racing potential!</span>
           <div className="home__btn-container">
@@ -33,17 +33,6 @@ function Home() {
             </a>
             <div />
           </div>
-          {/* <div className="video">
-            <h1 className="video__header heading--1">
-              Check us out on youtube
-            </h1>
-            <iframe
-							className='vid'
-							src='https://www.youtube-nocookie.com/embed/3SQlfiQZYdw?si=i_wiiPy_zv7Pm3U0'
-							title='YouTube video player'
-							frameBorder='0'
-						/>
-          </div> */}
         </div>
       </section>
     </>
