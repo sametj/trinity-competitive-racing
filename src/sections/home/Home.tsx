@@ -31,6 +31,13 @@ function Home() {
             >
               Schedule
             </a>
+            <a
+              target="_blank"
+              href="https://evo9x.gg/collections/tcr"
+              className="btn btn-secondary"
+            >
+              Shop
+            </a>
             <div />
           </div>
         </div>
