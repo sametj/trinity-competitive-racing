@@ -15,7 +15,7 @@ function Home() {
             Trinity Competitive Racing
           </h1>
           <h2 className="home__sub-heading heading--2">
-            Registration for season 20 is open!
+            Registration for TCR season is open!
           </h2>
           <span className="home__motto">Unlock your racing potential!</span>
           <div className="home__btn-container">

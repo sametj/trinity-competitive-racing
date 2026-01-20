@@ -1,6 +1,6 @@
 import sprite from "@/assets/sprites.svg";
 import "./layout.scss";
-import logo from "/TCR-blue-outlined-logo.svg";
+import logo from "/TCR_Logo.png";
 
 function Header() {
   return (
